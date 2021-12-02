@@ -28,7 +28,7 @@ let currentRoundNumber = 1;
     // Log Compare Guesses
     console.log(compareGuesses(10, 10, 10));
 
-    
+
     // Task 5
     const updateScore = (winner) => {
 
@@ -37,5 +37,9 @@ let currentRoundNumber = 1;
         }    
     }
 
+    // Task 6
+    const advanceRound = () => {
+        currentRoundNumber++
+    }
 
 
