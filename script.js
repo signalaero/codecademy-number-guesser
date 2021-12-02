@@ -11,3 +11,16 @@ const generateTarget = (min, max) => {
   // Log Generate Target
   console.log(generateTarget());
 
+const compareGuesses = (userGuess, comGuess, secretGuess) => {
+
+    if (Math.abs(userGuess - secretGuess) < Math.abs(comGuess - secretGuess)) {
+        return true
+    } else if (Math.abs(comGuess - secretGuess) < Math.abs(userGuess - secretGuess)) {
+        return false
+    } else {
+        return true
+    }
+}
+
+    // Log Compare Guesses
+    console.log(compareGuesses(10, 10, 10));
